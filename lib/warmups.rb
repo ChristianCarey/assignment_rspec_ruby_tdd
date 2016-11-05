@@ -29,7 +29,7 @@ class Warmups
   end
 
   def remaining_prices(prices, buy_price)
-    prices[(prices.find_index(buy_price)+1)..prices[-1]]
+    prices[(prices.find_index(buy_price)+1)..-1]
   end
 
   def validate_stock_input(prices)

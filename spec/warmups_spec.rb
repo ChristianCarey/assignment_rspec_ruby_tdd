@@ -39,7 +39,7 @@ describe Warmups do
       expect(warmups.stock_picker(prices).length).to eq(2)
     end
 
-    it 'returns the correct days for any  acending set of 2 prices' do
+    it 'returns the correct days for any acending set of 2 prices' do
       expect(warmups.stock_picker([1,2])).to eq([0,1])
       expect(warmups.stock_picker([1,3])).to eq([0,1])
     end
